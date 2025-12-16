@@ -235,7 +235,7 @@ function SubjectSelectionScreen({ subjects, subjectVariants, allCompletedVariant
                         Windows
                     </a>
                     <a
-                        href="https://github.com/Dan1q-dev/QuizApp/releases/download/v1.0.0/QuizApp-v1.0.0-debug.apk"
+                        href="https://github.com/Dan1q-dev/QuizApp/releases/download/v1.0.0/QuizApp.apk"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`flex items-center gap-2 px-3 py-2 rounded-lg text-xs sm:text-sm font-medium transition-colors ${theme === 'dark' ? 'bg-green-600/20 text-green-400 hover:bg-green-600/30' : 'bg-green-100 text-green-600 hover:bg-green-200'}`}
