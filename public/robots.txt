@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://quiz-app-theta-orcin.vercel.app/sitemap.xml
