@@ -218,6 +218,35 @@ function SubjectSelectionScreen({ subjects, subjectVariants, allCompletedVariant
                     })}
                 </motion.div>
 
+                {/* Download buttons */}
+                <motion.div
+                    variants={itemVariants}
+                    className="flex flex-wrap justify-center gap-2 sm:gap-3 mt-4 sm:mt-6"
+                >
+                    <a
+                        href="https://github.com/Dan1q-dev/QuizApp/releases/download/v1.0.0/QuizApp-Setup-1.0.0.exe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`flex items-center gap-2 px-3 py-2 rounded-lg text-xs sm:text-sm font-medium transition-colors ${theme === 'dark' ? 'bg-blue-600/20 text-blue-400 hover:bg-blue-600/30' : 'bg-blue-100 text-blue-600 hover:bg-blue-200'}`}
+                    >
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
+                        </svg>
+                        Windows
+                    </a>
+                    <a
+                        href="https://github.com/Dan1q-dev/QuizApp/releases/download/v1.0.0/QuizApp-v1.0.0-debug.apk"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`flex items-center gap-2 px-3 py-2 rounded-lg text-xs sm:text-sm font-medium transition-colors ${theme === 'dark' ? 'bg-green-600/20 text-green-400 hover:bg-green-600/30' : 'bg-green-100 text-green-600 hover:bg-green-200'}`}
+                    >
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.523 15.341c-.5 0-.91-.394-.91-.88s.41-.88.91-.88.909.394.909.88-.409.88-.909.88m-11.046 0c-.5 0-.91-.394-.91-.88s.41-.88.91-.88.909.394.909.88-.409.88-.909.88m11.4-6.025l1.97-3.407c.11-.19.045-.433-.145-.543-.19-.11-.433-.045-.543.145l-1.994 3.452c-1.5-.687-3.187-1.07-4.965-1.07s-3.465.383-4.965 1.07l-1.994-3.452c-.11-.19-.353-.255-.543-.145-.19.11-.255.353-.145.543l1.97 3.407c-3.24 1.74-5.457 5.02-5.73 8.884h23.764c-.273-3.864-2.49-7.144-5.73-8.884" />
+                        </svg>
+                        Android
+                    </a>
+                </motion.div>
+
                 {/* Disclaimer */}
                 <motion.p
                     variants={itemVariants}
