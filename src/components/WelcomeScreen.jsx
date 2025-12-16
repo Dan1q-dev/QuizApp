@@ -217,6 +217,14 @@ function SubjectSelectionScreen({ subjects, subjectVariants, allCompletedVariant
                         )
                     })}
                 </motion.div>
+
+                {/* Disclaimer */}
+                <motion.p
+                    variants={itemVariants}
+                    className={`text-[10px] sm:text-xs text-center mt-4 ${theme === 'dark' ? 'text-gray-600' : 'text-slate-400'}`}
+                >
+                    Не является официальным сайтом ЕНУ. Вопросы из открытых источников.
+                </motion.p>
             </div>
         </motion.div>
     )
